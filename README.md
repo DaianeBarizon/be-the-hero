@@ -43,13 +43,38 @@ Em uma semana foi desenvolvida uma aplicação do zero, dominando o backend, fro
 7. Entender sobre React Native & Expo (configurei a máquina e utilizei o próprio celular para rodar)
    - `react-native init mobile`
 
+### Segundo dia
+
+1. Node.js & Express
+   - Rotas e recursos
+   - Métodos HTTP
+     - **Get** Buscar informação no back-end
+     - **Post** Criar informação no back-end
+     - **Put** Alterar uma informação no back-end
+     - **Delete** Deletar uma informação no back-end
+   - Tipos de parâmetros
+     - **Query Params** Parâmetros nomeados enviados na rota após '?' (Filtros, Navegação)
+     - **Route Params** Parâmetros utilizados para identificar recursos
+     - **Request Body** Corpo da requisição, utilizado para criar ou alterar recursos
+2. Utilizando o Insomnia
+   - Testar rotas com outros métodos
+3. Configurando Nodemon
+4. Diferenças entre bancos de dados
+   - **SQL** MySql, SQLite <img src="image/sqlite.png" alt="node" height="18">, PostgreSQL, Oracle, Microsoft SQL Server (Com relacionamento)
+   - **NoSQL** MongoDB, CouchDB (Sem relacionamento)
+5. Configurando banco de dados
+6. Pensando nas entidades e funcionalidades
+7. Construção do back-end
+8. Adicionando módulo CORS
+9. Enviando back-end ao Github
+
 ## Para rodar a aplicação
 
 > OBS: pode-se utilizar o gerenciador de pacotes npm ou o yarn para rodar os comandos abaixo
 
 Execute `npm install` ou `yarn install` nas pastas backend, frontend e mobile, para instalar as dependências.
 
-Rode `npm start` ou `node index.js` - arquivo raiz - na pasta backend e acesse **localhost:3333**.
+Rode `npm start` na pasta backend e acesse **localhost:3333**.
 
 Rode `npm start` na pasta frontend para utilizar a versão web. Acesse via **localhost:3000**.
 

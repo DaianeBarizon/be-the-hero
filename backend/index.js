@@ -2,8 +2,12 @@ const express = require("express");
 
 const app = express(); //instanciar aplicação
 
-app.get("/", (request, response) => {
-  //return response.send("Hello World!");
+app.use(express.json()); //Antes de todas as requisições tornar JSON
+
+app.post("/users", (request, response) => {
+  const body = request.body;
+
+  console.log(body);
   return response.json({
     evento: "Semana OminiStack 11",
     aluno: "Daiane Barizon",
