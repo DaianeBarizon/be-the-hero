@@ -70,9 +70,9 @@ Em uma semana foi desenvolvida uma aplicação do zero, dominando o backend, fro
    - Se basear no layout
    ### Entidades
    - Tudo aquilo que vai ser salvo no banco de dados
-     - Ong
-     - Caso (Incidents)
-   ### Entidades
+   - Ong
+   - Caso (Incidents)
+   ### Funcionalidades
    - Login
    - Cadastro
    - Logout
@@ -84,7 +84,9 @@ Em uma semana foi desenvolvida uma aplicação do zero, dominando o backend, fro
    ### Migrations
    - Histórico do banco de dados
    - Facilitador de trabalho
+   <br>
      `npx knex migrate:make create_ongs`
+   <br>
      `npx knex migrate:latest`
 7. Construção do back-end
 8. Adicionando módulo CORS
