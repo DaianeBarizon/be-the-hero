@@ -10,9 +10,10 @@
      - Atributo repassados para componentes
      - Propriedade criada de forma automática
      - Desestruturação 
-   - Estado
+   - Estado & Imutabilidade
      - Informação que vai ser mantida pelo componente
-   - Imutabilidade
+     - Toda vez que o meu componente precisar armazenar uma informação dentro dele, nós não criar uma variável comum, sempre cria um estado, porque assim conseguimos atualizar a informação e ela reflete as alterações dentro da interface.
+     - Não pode manipular a variavel do estado de forma direta, precisa sobrepor 
 3. Página de Login
 4. Configurando rotas
 5. Cadastro de ONGs
