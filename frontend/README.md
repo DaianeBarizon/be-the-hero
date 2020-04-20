@@ -1,3 +1,23 @@
+### Terceiro dia
+
+1. Limpar Estrutura
+2. Conceitos do React
+   - Componente
+     - Usados para não repetir códigos
+   - JSX
+     - Html + Xml
+   - Propriedades
+     - Atributo repassados para componentes
+   - Estado
+   - Imutabilidade
+3. Página de Login
+4. Configurando rotas
+5. Cadastro de ONGs
+6. Listagem de Casos
+7. Cadastro de um novo caso
+8. Conectando aplicação à API
+9. Enviar projeto Github
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
