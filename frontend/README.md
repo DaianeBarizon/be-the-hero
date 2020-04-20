@@ -8,6 +8,8 @@
      - Html + Xml
    - Propriedades
      - Atributo repassados para componentes
+     - Propriedade criada de forma automática
+     - Desestruturação 
    - Estado
    - Imutabilidade
 3. Página de Login
