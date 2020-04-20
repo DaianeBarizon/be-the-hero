@@ -11,6 +11,7 @@
      - Propriedade criada de forma automática
      - Desestruturação 
    - Estado
+     - Informação que vai ser mantida pelo componente
    - Imutabilidade
 3. Página de Login
 4. Configurando rotas
