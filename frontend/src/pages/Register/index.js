@@ -11,7 +11,7 @@ export default function Register() {
     <div className="register-container">
       <div className="content">
         <section>
-          <img src={logoImg} alt="heroes" className="LogoHeroes" />
+          <img src={logoImg} alt="Be the Hero" className="LogoHeroes" />
           <h1>Cadastro</h1>
           <p>
             Faça seu cadastro, entre na plataforma e ajuse pessoas a encontrarem
