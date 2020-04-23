@@ -2,6 +2,8 @@ import React from "react";
 import { FiLogIn } from "react-icons/fi";
 import "./styles.css";
 
+//Link é usado para não renderizar a tela do toda
+import { Link } from "react-router-dom";
 import heroesImg from "../../assets/heroes.png";
 import logoImg from "../../assets/logo.svg";
 
@@ -16,10 +18,10 @@ export default function Logon() {
           <button className="button" type="submit">
             Entrar
           </button>
-          <a href="/register">
+          <Link className="back-link" to="/register">
             {" "}
             <FiLogIn size={16} color={"#e02041"} /> Não tenho cadastro
-          </a>
+          </Link>
         </form>
       </section>
       <img src={heroesImg} alt="heroes" className="imgHeroes" />

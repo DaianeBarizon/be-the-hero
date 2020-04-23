@@ -9,19 +9,20 @@
    - Propriedades
      - Atributo repassados para componentes
      - Propriedade criada de forma automática
-     - Desestruturação 
+     - Desestruturação
    - Estado & Imutabilidade
      - Informação que vai ser mantida pelo componente
      - Toda vez que o meu componente precisar armazenar uma informação dentro dele, nós não criar uma variável comum, sempre cria um estado, porque assim conseguimos atualizar a informação e ela reflete as alterações dentro da interface.
-     - Não pode manipular a variavel do estado de forma direta, precisa sobrepor 
+     - Não pode manipular a variavel do estado de forma direta, precisa sobrepor
 3. Página de Login
-     - `npm install react-icons` Vários pacotes de fontes/ícones. Alguns: Fi: feather icons, Md: materials icons, Fa: font awesome
+   - `npm install react-icons` pacotes de fonts/icons. Fi: feather icons, Md: materials icons, Fa: font awesome
 4. Configurando rotas
+   - `npm install react-router-dom`
 5. Cadastro de ONGs
 6. Listagem de Casos
 7. Cadastro de um novo caso
 8. Conectando aplicação à API
-9.  Enviar projeto Github
+9. Enviar projeto Github
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
