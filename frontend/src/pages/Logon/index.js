@@ -11,7 +11,7 @@ export default function Logon() {
   return (
     <div className="logon-container">
       <section className="form">
-        <img src={logoImg} alt="Be the Hero" className="LogoHeroes" />
+        <img src={logoImg} alt="Be the Hero" />
         <form action="" className="form">
           <h1>Faça seu Logon</h1>
           <input placeholder="Sua ID"></input>
@@ -24,7 +24,7 @@ export default function Logon() {
           </Link>
         </form>
       </section>
-      <img src={heroesImg} alt="heroes" className="imgHeroes" />
+      <img src={heroesImg} alt="heroes" />
     </div>
   );
 }

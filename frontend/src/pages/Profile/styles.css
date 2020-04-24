@@ -71,7 +71,7 @@
 }
 
 .profile-container ul li strong {
-  display: flex;
+  display: block;
   margin-bottom: 16px;
   color: #41414d;
 }
