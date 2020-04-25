@@ -24,6 +24,7 @@ export default function Profile() {
       })
       .then((response) => {
         setIndicidents(response.data);
+        console.log(response.data);
       });
   }, [ongId]);
 
@@ -64,10 +65,8 @@ export default function Profile() {
           <li Key={incident.id}>
             <strong>Caso:</strong>
             <p>{incident.title}</p>
-
             <strong>Descrição:</strong>
             <p>{incident.description}</p>
-
             <strong>Valor:</strong>
             <p>
               {Intl.NumberFormat("pt-BR", {
