@@ -23,10 +23,10 @@
      - Estilo cameCase
 4. Estrutura de pastas
 5. Ícone e Splash Screen
-   Gerar ícones pelo ape tools [layout](https://apetools.webprofusion.com/#/)
+   Gerar ícones pelo ape tools [apetools](https://apetools.webprofusion.com/#/)
 6. Configurando navegação
    - React Navigation
-     [layout](https://reactnavigation.org/docs/getting-started/)
+     [reactnavigation](https://reactnavigation.org/docs/getting-started/)
    - Navegar por Drawer (Menu Hambúrguer)
    - Navegar por tabs (Bottom, Top e outras)
    - Navegar por Stack (Com botões de voltar e topo automático)
@@ -39,3 +39,6 @@
 Para limpar o cache usar:
 `npm start -- --reset-cache`
 `yarn android-clean`
+ou:
+cd android
+gradlew clean
