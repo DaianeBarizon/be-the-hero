@@ -4,13 +4,26 @@ import {useNavigation} from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
 import Feather from 'react-native-vector-icons/Feather';
+import MailComposer from 'react-native-mail-compose';
 
 export default function Detail() {
   const navigation = useNavigation();
+  const message =
+    'Olá APAD, estou entranto em contato, pois gostaria de ajudar no caso "Cadelinha Atropelada" no valor de R$120,00';
 
   function navigateBack() {
     navigation.goBack();
   }
+
+  function sendEmail() {
+    MailComposer.composeAsync({
+      subject: 'Herói do caso: Cadelinha Atropelada',
+      recipients: ['daianebarizon22@gmail.com'],
+      body: message,
+    });
+  }
+
+  function sendWhatsApp() {}
 
   return (
     <View style={styles.container}>
@@ -35,10 +48,10 @@ export default function Detail() {
         <Text style={styles.heroTitle}>Seja o herói desse caso.</Text>
         <Text style={styles.heroDescription}>Entre em contato:</Text>
         <View style={styles.actions}>
-          <TouchableOpacity style={styles.action} onPress={() => {}}>
+          <TouchableOpacity style={styles.action} onPress={sendWhatsApp}>
             <Text style={styles.actionText}>WhatsApp</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.action} onPress={() => {}}>
+          <TouchableOpacity style={styles.action} onPress={sendEmail}>
             <Text style={styles.actionText}>Email</Text>
           </TouchableOpacity>
         </View>
