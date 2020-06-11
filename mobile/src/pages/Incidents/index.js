@@ -9,6 +9,8 @@ import api from '../../services/api';
 export default function Incidents() {
   const [incidents, setIncidents] = useState([]);
   const [total, setTotal] = useState(0);
+  const [page, setpage] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   console.log('incidents', incidents);
   const navigation = useNavigation();
@@ -18,13 +20,27 @@ export default function Incidents() {
   }
 
   async function loadIncidents() {
-    const response = await api.get('incidents');
-    setIncidents(response.data);
+    if (loading) {
+      return;
+    }
+
+    if (total > 0 && incidents.length === total) {
+      return;
+    }
+
+    setLoading(true);
+
+    const response = await api.get('incidents', {params: {page}});
+
+    setIncidents([...incidents, ...response.data]);
     setTotal(response.headers['x-total-count']);
+    setpage(page + 1);
+    setLoading(false);
   }
 
   useEffect(() => {
     loadIncidents();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -42,6 +58,8 @@ export default function Incidents() {
       <FlatList
         keyExtractor={(incident) => String(incident.id)}
         data={incidents}
+        onEndReached={loadIncidents}
+        onEndReachedThreshold={0.2}
         renderItem={({item: incident}) => (
           <View style={styles.incident}>
             <Text style={styles.incidentProperty}>ONG:</Text>
