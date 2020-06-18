@@ -4,7 +4,7 @@ import {useNavigation, useRoute} from '@react-navigation/native';
 import logoImg from '../../assets/logo.png';
 import styles from './styles';
 import Feather from 'react-native-vector-icons/Feather';
-import * as MailComposer from 'expo-mail-composer';
+import MailCompose from 'react-native-mail-compose';
 
 export default function Detail() {
   const navigation = useNavigation();
@@ -28,10 +28,24 @@ export default function Detail() {
   console.log('email', incident.email);
   function sendEmail() {
     console.log('aqui');
-    MailComposer.composeAsync({
+    MailCompose.send({
+      toRecipients: [incident.email],
+      //ccRecipients: ['cc1@example.com', 'cc2@example.com'],
+      //bccRecipients: ['bcc1@example.com', 'bcc2@example.com'],
       subject: `Herói do caso: ${incident.title}`,
-      recipients: [incident.email],
-      body: message,
+      text: message,
+      //html: '<p>This is <b>html</b> body</p>', // Or, use this if you want html body. Note that some Android mail clients / devices don't support this properly.
+      attachments: [
+        {
+          filename: 'mytext', // [Optional] If not provided, UUID will be generated.
+          ext: '.txt',
+          mimeType: 'text/plain',
+          text: 'Hello my friend', // Use this if the data is in UTF8 text.
+          data: '...BASE64_ENCODED_STRING...', // Or, use this if the data is not in plain text.
+        },
+      ],
+
+      //recipients: [incident.email],
     });
   }
 
