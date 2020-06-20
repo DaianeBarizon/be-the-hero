@@ -43,6 +43,36 @@ Em uma semana foi desenvolvida uma aplicação do zero, dominando o backend, fro
 7. Entender sobre React Native & Expo (configurei a máquina e utilizei o próprio celular para rodar)
    - `react-native init mobile`
 
+### Quinto dia
+
+1. Adicionando validação `npm i celebrate`
+   `{`
+   `BODY: 'body',`
+   `COOKIES: 'cookies',`
+   `HEADERS: 'headers',`
+   `PARAMS: 'params',`
+   `QUERY: 'query',`
+   `SIGNEDCOOKIES: 'signedCookies',`
+   `}`
+2. Adicionando testes
+   1. Por que fazer teste?
+   2. TDD > Teste Driven Development
+      Primeiro faz os testes, depois desenvolve
+   3. Configurando Jest
+   4. Tipos de testes
+      1. Integração: Testa por completo uma funcionalidade
+      2. Unitários: Testa de um pedaço da aplicação de forma muito isolada. Não vai ter side effects
+   5. Configurando banco de testes
+   6. Instalando supertest
+   7. Testando rota de autenticação
+3. Deploy
+   1. Alternativas
+   2. Qual escolher?
+4. Estudos daqui pra frente
+   1. Padrões de código: ESLint, Prettier
+   2. Autenticação JWT
+   3. Styled Components
+
 ## Para rodar a aplicação
 
 > OBS: pode-se utilizar o gerenciador de pacotes npm ou o yarn para rodar os comandos abaixo
