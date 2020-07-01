@@ -15,7 +15,7 @@
    - Testar rotas com outros métodos
 3. Configurando Nodemon
 4. Diferenças entre bancos de dados
-   - **SQL** MySql, SQLite <img src="image/sqlite.png" alt="node" height="18">, PostgreSQL, Oracle, Microsoft SQL Server (Com relacionamento) `npm i sqlite3`
+   - **SQL** MySql, SQLite, PostgreSQL, Oracle, Microsoft SQL Server (Com relacionamento) `npm i sqlite3`
    - **NoSQL** MongoDB, CouchDB (Sem relacionamento)
 5. Configurando banco de dados
    - Fazer a comunicação com o banco

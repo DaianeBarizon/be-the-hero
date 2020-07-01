@@ -42,3 +42,5 @@ Para limpar o cache usar:
 ou:
 cd android
 gradlew clean
+
+> OBS: Para que a api retorne valor deve configurar ao ip da máquina e cadastrar novos casos
