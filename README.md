@@ -46,6 +46,7 @@ Em uma semana foi desenvolvida uma aplicação do zero, dominando o backend, fro
 ### Quinto dia
 
 1. Adicionando validação `npm i celebrate`
+
    `{`
    `BODY: 'body',`
    `COOKIES: 'cookies',`
@@ -54,24 +55,29 @@ Em uma semana foi desenvolvida uma aplicação do zero, dominando o backend, fro
    `QUERY: 'query',`
    `SIGNEDCOOKIES: 'signedCookies',`
    `}`
+
 2. Adicionando testes
    1. Por que fazer teste?
    2. TDD > Teste Driven Development
       Primeiro faz os testes, depois desenvolve
-   3. Configurando Jest
-   4. Tipos de testes
+   3. Configurando Jest (Api Jest)
+   4. server-side rendering `Next.js`
+   5. Tipos de testes
       1. Integração: Testa por completo uma funcionalidade
       2. Unitários: Testa de um pedaço da aplicação de forma muito isolada. Não vai ter side effects
-   5. Configurando banco de testes
-   6. Instalando supertest
-   7. Testando rota de autenticação
+   6. Configurando banco de testes
+      1. `Cross-env`
+   7. Instalando supertest
+      1. Faz requisições http específica para teste e traz junto algumas validações
+   8. Testando rota de autenticação/criação
 3. Deploy
    1. Alternativas
    2. Qual escolher?
+      Heroku <img src="image/node.png" alt="node" height="18"> Node.js e <img src="image/react.png" alt="react" height="18"> React.js [Netlify](https://www.netlify.com/)
 4. Estudos daqui pra frente
    1. Padrões de código: ESLint, Prettier
    2. Autenticação JWT
-   3. Styled Components
+   3. Styled Components (CSS-in-JS)
 
 ## Para rodar a aplicação
 
