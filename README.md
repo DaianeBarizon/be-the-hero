@@ -98,7 +98,7 @@ Para este projeto rode `react-native run-android` ou `react-native run-ios` na p
     <img alt="web" title="web" src="image/print2.png">
     <img alt="web" title="web" src="image/print3.png">
     <img alt="web" title="web" src="image/print4.png">
-    <img alt="mobile" title="mobile" height="450" src="image/m-0.png">
+    <img alt="mobile" title="mobile" height="450" src="image/m-0.jpeg">
     <img alt="mobile" title="mobile" height="450" src="image/m-1.jpeg">
     <img alt="mobile" title="mobile" height="450" src="image/m-2.jpeg">
     <img alt="mobile" title="mobile" height="450" src="image/m-3.jpeg">
