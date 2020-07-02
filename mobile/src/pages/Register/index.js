@@ -15,7 +15,11 @@ import api from '../../services/api';
 
 export default function Logon() {
   const [incidents, setIncidents] = useState([]);
-  const [id, setId] = useState();
+  const [nameOng, setNameOng] = useState();
+  const [emailOng, setEmailOng] = useState();
+  const [whatsAppOng, setWhatsAppOng] = useState();
+  const [cityOng, setCityOng] = useState();
+  const [ufOng, setUfOng] = useState();
   const [total, setTotal] = useState(0);
   const [page, setpage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -52,65 +56,68 @@ export default function Logon() {
 
   return (
     <ScrollView>
-      <View style={styles.logonContainer}>
-        <View style={styles.logonHeader}>
-          <Image style={styles.logonLogoImg} source={logoImg} />
+      <View style={styles.registerContainer}>
+        <View style={styles.registerHeader}>
+          <Image style={styles.registerLogoImg} source={logoImg} />
         </View>
-        <Text style={styles.logonTitle}>Cadastro</Text>
-        <Text style={styles.logonSubTitle}>
+        <Text style={styles.registerTitle}>Cadastro</Text>
+        <Text style={styles.registerSubTitle}>
           Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem
           os casos da sua ONG.
         </Text>
         <TextInput
-          onChangeText={(text) => setId(text)}
+          onChangeText={(text) => setNameOng(text)}
           placeholderTextColor={'#999'}
-          placeholder={'Sua ID'}
-          style={styles.logonInput}
-          value={id}
+          placeholder={'Nome da ONG'}
+          style={styles.registerInput}
+          value={nameOng}
         />
         <TextInput
-          onChangeText={(text) => setId(text)}
+          onChangeText={(text) => setEmailOng(text)}
           placeholderTextColor={'#999'}
-          placeholder={'Sua ID'}
-          style={styles.logonInput}
-          value={id}
+          placeholder={'Email'}
+          style={styles.registerInput}
+          value={emailOng}
         />
         <TextInput
-          onChangeText={(text) => setId(text)}
+          onChangeText={(text) => setWhatsAppOng(text)}
           placeholderTextColor={'#999'}
-          placeholder={'Sua ID'}
-          style={styles.logonInput}
-          value={id}
+          placeholder={'WhatsApp'}
+          style={styles.registerInput}
+          value={whatsAppOng}
         />
-        <TextInput
-          onChangeText={(text) => setId(text)}
-          placeholderTextColor={'#999'}
-          placeholder={'Sua ID'}
-          style={styles.logonInput}
-          value={id}
-        />
-        <TextInput
-          onChangeText={(text) => setId(text)}
-          placeholderTextColor={'#999'}
-          placeholder={'Sua ID'}
-          style={styles.logonInput}
-          value={id}
-        />
+        <View style={styles.registerInputContainer}>
+          <TextInput
+            onChangeText={(text) => setCityOng(text)}
+            placeholderTextColor={'#999'}
+            placeholder={'Cidade'}
+            style={styles.registerInputCity}
+            value={cityOng}
+          />
+          <TextInput
+            onChangeText={(text) => setUfOng(text)}
+            placeholderTextColor={'#999'}
+            placeholder={'UF'}
+            style={styles.registerInputUf}
+            value={ufOng}
+          />
+        </View>
         <TouchableOpacity
-          style={styles.logonButton}
+          style={styles.registerButton}
           onPress={() => navigateToLogon()}>
-          <Text style={styles.logonButtonText}>Cadastrar</Text>
+          <Text style={styles.registerButtonText}>Cadastrar</Text>
         </TouchableOpacity>
-        <View style={styles.logonRegisterContainer}>
+        <TouchableOpacity
+          onPress={() => navigateToLogon()}
+          style={styles.logonRegisterContainer}>
           <Feather
             style={styles.logonRegisterIcon}
-            name="arrow-left"
-            onPress={() => navigateToLogon()}
-            size={14}
-            color={'#e02041'}>
-            <Text style={styles.logonRegisterText}>Não tenho cadastro</Text>
-          </Feather>
-        </View>
+            name="arrow-left-circle"
+            size={20}
+            color={'#e02041'}
+          />
+          <Text style={styles.logonRegisterText}>Voltar ao logon</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );

@@ -1,35 +1,36 @@
 import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
-  logonContainer: {
+  registerContainer: {
     flex: 1,
     paddingHorizontal: 24,
     paddingTop: 20,
   },
 
-  logonHeader: {
+  registerHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
 
-  logonLogoImg: {
+  registerLogoImg: {
+    marginTop: 20,
     height: 50,
     width: 120,
   },
 
-  logonHeroesImg: {
-    height: 400,
-    width: 410,
-  },
-
-  logonTitle: {
+  registerTitle: {
+    marginTop: 40,
     fontWeight: 'bold',
     color: '#41414d',
     fontSize: 20,
     marginVertical: 10,
   },
 
-  logonInput: {
+  registerSubTitle: {
+    marginBottom: 20,
+  },
+
+  registerInput: {
     fontSize: 14,
     color: '#41414d',
     borderColor: '#999',
@@ -40,20 +41,31 @@ export default StyleSheet.create({
     paddingVertical: 10,
   },
 
-  logonRegisterContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  logonRegisterIcon: {
-    marginRight: 5,
-  },
-
-  logonRegisterText: {
+  registerInputCity: {
+    fontSize: 14,
     color: '#41414d',
+    borderColor: '#999',
+    marginBottom: 15,
+    borderRadius: 4,
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    width: '60%',
   },
 
-  logonButton: {
+  registerInputUf: {
+    fontSize: 14,
+    color: '#41414d',
+    borderColor: '#999',
+    marginBottom: 15,
+    borderRadius: 4,
+    borderWidth: 1,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    width: '35%',
+  },
+
+  registerButton: {
     backgroundColor: '#e02041',
     marginBottom: 10,
     borderRadius: 4,
@@ -61,9 +73,29 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
 
-  logonButtonText: {
+  registerButtonText: {
     color: '#FFFFFF',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+
+  registerInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
+  logonRegisterContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+
+  logonRegisterIcon: {
+    marginRight: 10,
+  },
+
+  logonRegisterText: {
+    color: '#41414d',
   },
 });

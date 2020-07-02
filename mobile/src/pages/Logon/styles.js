@@ -40,19 +40,6 @@ export default StyleSheet.create({
     paddingVertical: 10,
   },
 
-  logonRegisterContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  logonRegisterIcon: {
-    marginRight: 10,
-  },
-
-  logonRegisterText: {
-    color: '#41414d',
-  },
-
   logonButton: {
     backgroundColor: '#e02041',
     marginBottom: 10,
@@ -64,5 +51,20 @@ export default StyleSheet.create({
   logonButtonText: {
     color: '#FFFFFF',
     fontWeight: 'bold',
+    fontSize: 16,
+  },
+
+  logonRegisterContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+
+  logonRegisterIcon: {
+    marginRight: 10,
+  },
+
+  logonRegisterText: {
+    color: '#41414d',
   },
 });

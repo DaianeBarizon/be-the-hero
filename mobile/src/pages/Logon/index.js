@@ -75,16 +75,17 @@ export default function Logon() {
           onPress={() => navigateToIncidents()}>
           <Text style={styles.logonButtonText}>Entrar</Text>
         </TouchableOpacity>
-        <View style={styles.logonRegisterContainer}>
+        <TouchableOpacity
+          onPress={() => navigateToRegister()}
+          style={styles.logonRegisterContainer}>
           <Feather
             style={styles.logonRegisterIcon}
-            name="arrow-right"
-            onPress={() => navigateToRegister()}
-            size={14}
-            color={'#e02041'}>
-            <Text style={styles.logonRegisterText}>Não tenho cadastro</Text>
-          </Feather>
-        </View>
+            name="arrow-right-circle"
+            size={20}
+            color={'#e02041'}
+          />
+          <Text style={styles.logonRegisterText}>Não tenho cadastro</Text>
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
