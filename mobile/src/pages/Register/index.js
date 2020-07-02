@@ -15,11 +15,11 @@ import api from '../../services/api';
 
 export default function Logon() {
   const [incidents, setIncidents] = useState([]);
-  const [nameOng, setNameOng] = useState();
-  const [emailOng, setEmailOng] = useState();
-  const [whatsAppOng, setWhatsAppOng] = useState();
-  const [cityOng, setCityOng] = useState();
-  const [ufOng, setUfOng] = useState();
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [whatsApp, setWhatsApp] = useState();
+  const [city, setCity] = useState();
+  const [uf, setUf] = useState();
   const [total, setTotal] = useState(0);
   const [page, setpage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -66,40 +66,40 @@ export default function Logon() {
           os casos da sua ONG.
         </Text>
         <TextInput
-          onChangeText={(text) => setNameOng(text)}
+          onChangeText={(text) => setName(text)}
           placeholderTextColor={'#999'}
-          placeholder={'Nome da ONG'}
+          placeholder={'Nome'}
           style={styles.registerInput}
-          value={nameOng}
+          value={name}
         />
         <TextInput
-          onChangeText={(text) => setEmailOng(text)}
+          onChangeText={(text) => setEmail(text)}
           placeholderTextColor={'#999'}
           placeholder={'Email'}
           style={styles.registerInput}
-          value={emailOng}
+          value={email}
         />
         <TextInput
-          onChangeText={(text) => setWhatsAppOng(text)}
+          onChangeText={(text) => setWhatsApp(text)}
           placeholderTextColor={'#999'}
           placeholder={'WhatsApp'}
           style={styles.registerInput}
-          value={whatsAppOng}
+          value={whatsApp}
         />
         <View style={styles.registerInputContainer}>
           <TextInput
-            onChangeText={(text) => setCityOng(text)}
+            onChangeText={(text) => setCity(text)}
             placeholderTextColor={'#999'}
             placeholder={'Cidade'}
             style={styles.registerInputCity}
-            value={cityOng}
+            value={city}
           />
           <TextInput
-            onChangeText={(text) => setUfOng(text)}
+            onChangeText={(text) => setUf(text)}
             placeholderTextColor={'#999'}
             placeholder={'UF'}
             style={styles.registerInputUf}
-            value={ufOng}
+            value={uf}
           />
         </View>
         <TouchableOpacity
