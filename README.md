@@ -99,10 +99,10 @@ Para este projeto rode `react-native run-android` ou `react-native run-ios` na p
     <img alt="web" title="web" src="image/print3.png">
     <img alt="web" title="web" src="image/print4.png">
     <img alt="mobile" title="mobile" src="image/m-0.png">
-    <img alt="mobile" title="mobile" src="image/m-1.jpg">
-    <img alt="mobile" title="mobile" src="image/m-2.jpg">
-    <img alt="mobile" title="mobile" src="image/m-3.jpg">
-    <img alt="mobile" title="mobile" src="image/m-4.jpg">
+    <img alt="mobile" title="mobile" src="image/m-1.jpeg">
+    <img alt="mobile" title="mobile" src="image/m-2.jpeg">
+    <img alt="mobile" title="mobile" src="image/m-3.jpeg">
+    <img alt="mobile" title="mobile" src="image/m-4.jpeg">
     <img alt="mobile" title="mobile" src="image/m-5.png">
     <img alt="mobile" title="mobile" src="image/m-6.png">
     <img alt="insomnia" title="insomnia" src="image/print-insomnia.png">
