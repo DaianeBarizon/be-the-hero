@@ -108,7 +108,5 @@ Para este projeto rode `react-native run-android` ou `react-native run-ios` na p
     <img alt="insomnia" title="insomnia" src="image/print-insomnia.png">
 </p>
 
-Veja também esse [vídeo](https://youtu.be/UygqW2eBJJA) com a demonstração das versões web e mobile rodando localmente.
-
 Configuração do VSCode
 [layout](https://github.com/CollabCodeTech/forum-do-front-ao-end/issues/20)
